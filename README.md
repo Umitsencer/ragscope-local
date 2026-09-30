@@ -13,6 +13,7 @@
   <img src="https://img.shields.io/badge/Foundry_Local_SDK-2.0.1-512BD4" alt="Foundry SDK">
   <img src="https://img.shields.io/badge/MITRE_ATT%26CK-v19.2-E84139" alt="MITRE ATT&CK">
   <img src="https://img.shields.io/badge/Linter-ruff-D7FF64" alt="Ruff">
+  <img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg" alt="License Apache-2.0">
 </p>
 
 <p>

@@ -54,4 +54,4 @@ Bu sonuç bağımsız gold veya görülmemiş-soru kalite sonucu değildir. Ayr�
 
 1. Bağımsız gold set, gerçek kullanıcı UAT'si ve red-team yok; production-ready iddiası yapılamaz.
 2. Tamamen ağsız soğuk başlangıç doğrulanmadı; catalog task metadata'sı erişim gerektirebilir.
-3. **Repository-level lisans seçilmedi.** Repo public konuma getirildi. Lisans eklenmezse varsayılan telif hakları geçerlidir; kod "açık kaynak" sayılmaz. Bu bilinçli bir karar ise belgelenmeli, değilse bir lisans (`MIT`, `Apache-2.0` vb.) eklenmelidir.
+3. `LICENSE` dosyası Apache-2.0 ile eklenmiştir; telif hakları `2026 Ümit SENCER`. Üçüncü taraf veri ve model koşulları [`NOTICE.md`](../NOTICE.md) kapsamındadır ve repo lisansından ayrıdır.

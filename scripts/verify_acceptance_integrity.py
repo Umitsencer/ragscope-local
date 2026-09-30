@@ -21,6 +21,23 @@ def digest(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def portable_text_digests(path: Path) -> set[str]:
+    """Compute sha256 digests for both canonical LF and CRLF encodings of UTF-8 text.
+
+    Security boundary: This normalization permits checkout portability across platforms
+    (e.g., Windows CRLF working tree vs. Linux/git checkout LF) without permitting any
+    semantic or content change. It is strictly limited to newline normalization equivalence
+    and is not a general hash bypass.
+    """
+    text = path.read_text(encoding="utf-8")
+    canonical_lf = text.replace("\r\n", "\n").replace("\r", "\n")
+    canonical_crlf = canonical_lf.replace("\n", "\r\n")
+    return {
+        hashlib.sha256(canonical_lf.encode("utf-8")).hexdigest(),
+        hashlib.sha256(canonical_crlf.encode("utf-8")).hexdigest(),
+    }
+
+
 def verify(run_dir: Path) -> dict:
     summary = json.loads((run_dir / "summary.json").read_text(encoding="utf-8"))
     cases_doc = json.loads((ROOT / "data/acceptance/cases.json").read_text(encoding="utf-8"))
@@ -63,7 +80,7 @@ def verify(run_dir: Path) -> dict:
             != hashlib.sha256(expected_case["query"].encode("utf-8")).hexdigest()
         ):
             errors.append(f"query_hash:{record['id']}")
-        if output.get("corpus_sha256") != digest(corpus_path):
+        if output.get("corpus_sha256") not in portable_text_digests(corpus_path):
             errors.append(f"corpus_hash:{record['id']}")
         cards = {card["attack_id"]: card for card in output.get("evidence_cards", [])}
         for quote in output.get("generation", {}).get("quotes", []):

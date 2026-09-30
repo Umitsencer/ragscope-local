@@ -1,0 +1,28 @@
+{
+  "corpus": "MITRE ATT&CK definition-only corpus v1",
+  "excluded_stix_object_types": [
+    "relationship"
+  ],
+  "excluded_text": [
+    "uses relationship descriptions",
+    "procedure examples"
+  ],
+  "fields": [
+    "document_id",
+    "name",
+    "description",
+    "is_subtechnique",
+    "parent_technique_id",
+    "stix_object_id"
+  ],
+  "included_stix_object_type": "attack-pattern",
+  "limitations": [
+    "Structural exclusion prevents relationship procedure text from entering the corpus.",
+    "Definition text can still share domain vocabulary with queries; that is the intended retrieval task, not a guarantee against semantic overlap."
+  ],
+  "source": {
+    "commit": "6cda5ad8462c79e14fbb872f4e09059b18e0cfc4",
+    "name": "MITRE Enterprise ATT&CK 19.2",
+    "raw_sha256": "dc1639caa5501d720e280cf1cbd8fbe009884a0c9b3e6e9ed9d0c25166c3d8f4"
+  }
+}

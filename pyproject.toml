@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=65.5"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ragscope-local"
+version = "0.1.0"
+description = "Evidence-first local MITRE ATT&CK retrieval and evaluation lab"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+  "numpy==1.26.4",
+  "foundry-local-sdk==2.0.1",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "UP", "B", "C4", "SIM", "PERF", "RUF007"]
+
+[tool.ruff.format]
+line-ending = "lf"

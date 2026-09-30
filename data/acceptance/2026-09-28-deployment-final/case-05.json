@@ -1,0 +1,83 @@
+{
+  "id": "out_of_domain",
+  "review_focus": "Insufficient evidence; no fabricated ATT&CK-based recipe.",
+  "elapsed_seconds": 77.829,
+  "exit_code": 0,
+  "stderr": "",
+  "unparsed_stdout": "",
+  "process_ok": true,
+  "outcome": "insufficient_evidence",
+  "semantic_review": "pending",
+  "output": {
+    "run": "ragscope-local-extractive-demo-v1",
+    "query_sha256": "fc8be41dca30c271574aa365adb7497f3af2e40811c70d97477638a14904f6f9",
+    "corpus_sha256": "9fcfa7e666397a1e8cc7ad54eb985a17472ded86be9bee4a90dab8ba8b9481fd",
+    "runtime": {
+      "model_id": "qwen3-embedding-0.6b-generic-cpu:1",
+      "sdk_version": "2.0.1",
+      "cache_sdk_version": "1.2.4",
+      "runtime_device": "CPU",
+      "local_inference": true
+    },
+    "evidence_cards": [
+      {
+        "rank": 1,
+        "attack_id": "T1683",
+        "name": "Generate Content",
+        "is_subtechnique": false,
+        "parent_technique_id": null,
+        "cosine_similarity": 0.29666247963905334,
+        "definition": "Adversaries may create or generate content to support targeting and operations. This content may be used to establish personas, impersonate known individuals or organizations, and support [Social Engineering](https://attack.mitre.org/techniques/T1684), fraud, or influence activities. Written materials, audio, images, video, or other media may be developed and tailored to the target and objective.(Citation: IBM AI-Generated Content) Content development may occur prior to or during an operation. Adversaries may develop or generate content in-house, source it through third parties, or produce it using AI-assisted tools. Adversaries may use AI to research targets, develop pretexts, and better understand the organizations and individuals they intend to target or deceive prior to generating content (i.e., [Query Public AI Services](https://attack.mitre.org/techniques/T1682)); for obtaining access to AI tools used in content generation, see [Artificial Intelligence](https://attack.mitre.org/techniques/T1588/007). Content may be leveraged in support of techniques such as [Phishing](https://attack.mitre.org/techniques/T1566), [Phishing for Information](https://attack.mitre.org/techniques/T1598), [Social Engineering](https://attack.mitre.org/techniques/T1684), [Financial Theft](https://attack.mitre.org/techniques/T1657), or [Establish Accounts](https://attack.mitre.org/techniques/T1585). Generated or developed content does not include malicious code or scripts (i.e., [Develop Capabilities](https://attack.mitre.org/techniques/T1587) and [Artificial Intelligence](https://attack.mitre.org/techniques/T1588/007))."
+      },
+      {
+        "rank": 2,
+        "attack_id": "T1598.004",
+        "name": "Spearphishing Voice",
+        "is_subtechnique": true,
+        "parent_technique_id": "T1598",
+        "cosine_similarity": 0.27246832847595215,
+        "definition": "Adversaries may use voice communications to elicit sensitive information that can be used during targeting. Spearphishing for information is an attempt to trick targets into divulging information, frequently credentials or other actionable information. Spearphishing for information frequently involves social engineering techniques, such as posing as a source with a reason to collect information (ex: [Impersonation](https://attack.mitre.org/techniques/T1684/001)) and/or creating a sense of urgency or alarm for the recipient. All forms of phishing are electronically delivered social engineering. In this scenario, adversaries use phone calls to elicit sensitive information from victims. Known as voice phishing (or \"vishing\"), these communications can be manually executed by adversaries, hired call centers, or even automated via robocalls. Voice phishers may spoof their phone number while also posing as a trusted entity, such as a business partner or technical support staff.(Citation: BOA Telephone Scams) Victims may also receive phishing messages that direct them to call a phone number (\"callback phishing\") where the adversary attempts to collect confidential information.(Citation: Avertium callback phishing) Adversaries may also use information from previous reconnaissance efforts (ex: [Search Open Websites/Domains](https://attack.mitre.org/techniques/T1593) or [Search Victim-Owned Websites](https://attack.mitre.org/techniques/T1594)) to tailor pretexts to be even more persuasive and believable for the victim."
+      },
+      {
+        "rank": 3,
+        "attack_id": "T1059.002",
+        "name": "AppleScript",
+        "is_subtechnique": true,
+        "parent_technique_id": "T1059",
+        "cosine_similarity": 0.2653181850910187,
+        "definition": "Adversaries may abuse AppleScript for execution. AppleScript is a macOS scripting language designed to control applications and parts of the OS via inter-application messages called AppleEvents.(Citation: Apple AppleScript) These AppleEvent messages can be sent independently or easily scripted with AppleScript. These events can locate open windows, send keystrokes, and interact with almost any open application locally or remotely. Scripts can be run from the command-line via <code>osascript /path/to/script</code> or <code>osascript -e \"script here\"</code>. Aside from the command line, scripts can be executed in numerous ways including Mail rules, Calendar.app alarms, and Automator workflows. AppleScripts can also be executed as plain text shell scripts by adding <code>#!/usr/bin/osascript</code> to the start of the script file.(Citation: SentinelOne AppleScript) AppleScripts do not need to call <code>osascript</code> to execute. However, they may be executed from within mach-O binaries by using the macOS [Native API](https://attack.mitre.org/techniques/T1106)s <code>NSAppleScript</code> or <code>OSAScript</code>, both of which execute code independent of the <code>/usr/bin/osascript</code> command line utility. Adversaries may abuse AppleScript to execute various behaviors, such as interacting with an open SSH connection, moving to remote machines, and even presenting users with fake dialog boxes. These events cannot start applications remotely (they can start them locally), but they can interact with applications if they're already running remotely. On macOS 10.10 Yosemite and higher, AppleScript has the ability to execute [Native API](https://attack.mitre.org/techniques/T1106)s, which otherwise would require compilation and execution in a mach-O binary file format.(Citation: SentinelOne macOS Red Team) Since this is a scripting language, it can be used to launch more common techniques as well such as a reverse shell via [Python](https://attack.mitre.org/techniques/T1059/006).(Citation: Macro Malware Targets Macs)"
+      }
+    ],
+    "sibling_diagnostic": {
+      "available": true,
+      "top_result_parent_family": "T1683",
+      "family_child_ids": [
+        "T1683.001",
+        "T1683.002"
+      ],
+      "message": "SAGE M3 child/parent/abstain gate is not enabled: its controlled dev calibration did not meet the declared risk bound."
+    },
+    "generation": {
+      "status": "insufficient_evidence",
+      "quotes": [],
+      "rejection_reason": null,
+      "proposal_count": 0,
+      "scope_guard": "unresolved",
+      "scope_removed_count": 0,
+      "review_performed": false,
+      "validated_selection_count": 0,
+      "display_omitted_count": 0,
+      "model_id": "Phi-4-mini-instruct-generic-cpu:5",
+      "finish_reason": "stop",
+      "elapsed_seconds": 72.246,
+      "validation": "exact_source_span_with_model_relevance_review",
+      "selection_protocol": "propose-scope-review-v2",
+      "human_relevance_review_required": true
+    },
+    "limitations": [
+      "LLM selects excerpts; application renders exact corpus text, not a free-form answer.",
+      "Source fidelity does not establish relevance, truth or an incident verdict.",
+      "Synthetic educational demonstration; no general safety or fully offline guarantee."
+    ]
+  }
+}

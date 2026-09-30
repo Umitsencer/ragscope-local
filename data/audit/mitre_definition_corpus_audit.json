@@ -1,0 +1,12 @@
+{
+  "active_definition_documents": 697,
+  "active_parent_documents": 222,
+  "active_subtechnique_documents": 475,
+  "document_id_sha256": "9075c1501d0856438c7688c46a9b6bb26baa1c8bb447b9539a0e6f27f6c37564",
+  "exact_normalized_uses_description_equals_definition_count": 0,
+  "relationship_objects_used_as_corpus_input": 0,
+  "source_stix_object_types_read": [
+    "attack-pattern"
+  ],
+  "uses_procedure_descriptions_used_as_corpus_input": 0
+}

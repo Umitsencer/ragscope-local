@@ -1,0 +1,24 @@
+{
+  "benchmark": "MITRE ATT&CK controlled procedure retrieval v1",
+  "gold_definition": "Active Enterprise ATT&CK target technique ids of official uses relationships sharing a normalized procedure description.",
+  "limitations": [
+    "Controlled MITRE procedure benchmark only; not an independent raw-report benchmark.",
+    "It evaluates retrieval against official ATT&CK relationship targets, not human adjudication.",
+    "Corpus construction must exclude uses relationship descriptions to prevent direct procedure-text leakage."
+  ],
+  "source": {
+    "commit": "6cda5ad8462c79e14fbb872f4e09059b18e0cfc4",
+    "name": "MITRE Enterprise ATT&CK 19.2",
+    "raw_sha256": "dc1639caa5501d720e280cf1cbd8fbe009884a0c9b3e6e9ed9d0c25166c3d8f4"
+  },
+  "split_protocol": {
+    "allocation": {
+      "dev": "70-84",
+      "test": "85-99",
+      "train": "0-69"
+    },
+    "normalized_query_cross_split_overlap": 0,
+    "seed": "ragscope-mitre-procedure-v1-20260919",
+    "unit": "relationship source_ref"
+  }
+}

@@ -1,0 +1,12 @@
+# Third-party raw data are fetched from pinned sources; do not publish them by default.
+data/raw/
+data/local_cache/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.venv/
+.env
+.env.*
+dist/
+archive/

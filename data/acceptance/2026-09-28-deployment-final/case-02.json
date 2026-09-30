@@ -1,0 +1,106 @@
+{
+  "id": "phishing",
+  "review_focus": "Attachment-specific explanation, distinguished from links where evidence allows.",
+  "elapsed_seconds": 60.038,
+  "exit_code": 0,
+  "stderr": "",
+  "unparsed_stdout": "",
+  "process_ok": true,
+  "outcome": "evidence_selected",
+  "semantic_review": "pending",
+  "output": {
+    "run": "ragscope-local-extractive-demo-v1",
+    "query_sha256": "643231ab641c4f011dc4a8c2e2660b2ae7fbda7bba01232a54cc97afdd275398",
+    "corpus_sha256": "9fcfa7e666397a1e8cc7ad54eb985a17472ded86be9bee4a90dab8ba8b9481fd",
+    "runtime": {
+      "model_id": "qwen3-embedding-0.6b-generic-cpu:1",
+      "sdk_version": "2.0.1",
+      "cache_sdk_version": "1.2.4",
+      "runtime_device": "CPU",
+      "local_inference": true
+    },
+    "evidence_cards": [
+      {
+        "rank": 1,
+        "attack_id": "T1566.001",
+        "name": "Spearphishing Attachment",
+        "is_subtechnique": true,
+        "parent_technique_id": "T1566",
+        "cosine_similarity": 0.8200708031654358,
+        "definition": "Adversaries may send spearphishing emails with a malicious attachment in an attempt to gain access to victim systems. Spearphishing attachment is a specific variant of spearphishing. Spearphishing attachment is different from other forms of spearphishing in that it employs the use of malware attached to an email. All forms of spearphishing are electronically delivered social engineering targeted at a specific individual, company, or industry. In this scenario, adversaries attach a file to the spearphishing email and usually rely upon [User Execution](https://attack.mitre.org/techniques/T1204) to gain execution.(Citation: Unit 42 DarkHydrus July 2018) Spearphishing may also involve social engineering techniques, such as posing as a trusted source. There are many options for the attachment such as Microsoft Office documents, executables, PDFs, or archived files. Upon opening the attachment (and potentially clicking past protections), the adversary's payload exploits a vulnerability or directly executes on the user's system. The text of the spearphishing email usually tries to give a plausible reason why the file should be opened, and may explain how to bypass system protections in order to do so. The email may also contain instructions on how to decrypt an attachment, such as a zip file password, in order to evade email boundary defenses. Adversaries frequently manipulate file extensions and icons in order to make attached executables appear to be document files, or files exploiting one application appear to be a file for a different one."
+      },
+      {
+        "rank": 2,
+        "attack_id": "T1598.002",
+        "name": "Spearphishing Attachment",
+        "is_subtechnique": true,
+        "parent_technique_id": "T1598",
+        "cosine_similarity": 0.801593542098999,
+        "definition": "Adversaries may send spearphishing messages with a malicious attachment to elicit sensitive information that can be used during targeting. Spearphishing for information is an attempt to trick targets into divulging information, frequently credentials or other actionable information. Spearphishing for information frequently involves social engineering techniques, such as posing as a source with a reason to collect information (ex: [Establish Accounts](https://attack.mitre.org/techniques/T1585) or [Compromise Accounts](https://attack.mitre.org/techniques/T1586)) and/or sending multiple, seemingly urgent messages. All forms of spearphishing are electronically delivered social engineering targeted at a specific individual, company, or industry. In this scenario, adversaries attach a file to the spearphishing email. In some cases, they may rely upon the recipient populating information, then returning the file.(Citation: Sophos Attachment)(Citation: GitHub Phishery) The text of the spearphishing email usually tries to give a plausible reason why the file should be filled-in, such as a request for information from a business associate. In other cases, adversaries may leverage techniques such as [HTML Smuggling](https://attack.mitre.org/techniques/T1027/006) to harvest user credentials via fake login portals.(Citation: Huntress HTML Smuggling 2024) Adversaries may also use information from previous reconnaissance efforts (ex: [Search Open Websites/Domains](https://attack.mitre.org/techniques/T1593) or [Search Victim-Owned Websites](https://attack.mitre.org/techniques/T1594)) to craft persuasive and believable lures."
+      },
+      {
+        "rank": 3,
+        "attack_id": "T1566",
+        "name": "Phishing",
+        "is_subtechnique": false,
+        "parent_technique_id": null,
+        "cosine_similarity": 0.6686425805091858,
+        "definition": "Adversaries may send phishing messages to gain access to victim systems. All forms of phishing are electronically delivered social engineering. Phishing can be targeted, known as spearphishing. In spearphishing, a specific individual, company, or industry will be targeted by the adversary. More generally, adversaries can conduct non-targeted phishing, such as in mass malware spam campaigns. Adversaries may send victims emails containing malicious attachments or links, typically to execute malicious code on victim systems. Phishing may also be conducted via third-party services, like social media platforms. Phishing may also involve social engineering techniques, such as posing as a trusted source, as well as evasive techniques such as removing or manipulating emails or metadata/headers from compromised accounts being abused to send messages (e.g., [Email Hiding Rules](https://attack.mitre.org/techniques/T1564/008)).(Citation: Microsoft OAuth Spam 2022)(Citation: Palo Alto Unit 42 VBA Infostealer 2014) Another way to accomplish this is by [Email Spoofing](https://attack.mitre.org/techniques/T1684/002)(Citation: Proofpoint-spoof) the identity of the sender, which can be used to fool both the human recipient as well as automated security tools,(Citation: cyberproof-double-bounce) or by including the intended target as a party to an existing email thread that includes malicious files or links (i.e., \"thread hijacking\").(Citation: phishing-krebs) Victims may also receive phishing messages that instruct them to call a phone number where they are directed to visit a malicious URL, download malware,(Citation: sygnia Luna Month)(Citation: CISA Remote Monitoring and Management Software) or install adversary-accessible remote management tools onto their computer (i.e., [User Execution](https://attack.mitre.org/techniques/T1204)).(Citation: Unit42 Luna Moth)"
+      }
+    ],
+    "sibling_diagnostic": {
+      "available": true,
+      "top_result_parent_family": "T1566",
+      "family_child_ids": [
+        "T1566.001",
+        "T1566.002",
+        "T1566.003",
+        "T1566.004"
+      ],
+      "message": "SAGE M3 child/parent/abstain gate is not enabled: its controlled dev calibration did not meet the declared risk bound."
+    },
+    "generation": {
+      "status": "evidence_selected",
+      "quotes": [
+        {
+          "span_id": "E1",
+          "attack_id": "T1566.001",
+          "name": "Spearphishing Attachment",
+          "start": 0,
+          "end": 117,
+          "quote": "Adversaries may send spearphishing emails with a malicious attachment in an attempt to gain access to victim systems.",
+          "source_sha256": "e4389887cfddcfd1a88257131a73c889177ab6b997a494b466c4b4e72dce4414",
+          "exact_source_match": true
+        },
+        {
+          "span_id": "E5",
+          "attack_id": "T1566.001",
+          "name": "Spearphishing Attachment",
+          "start": 447,
+          "end": 756,
+          "quote": "In this scenario, adversaries attach a file to the spearphishing email and usually rely upon [User Execution](https://attack.mitre.org/techniques/T1204) to gain execution.(Citation: Unit 42 DarkHydrus July 2018) Spearphishing may also involve social engineering techniques, such as posing as a trusted source.",
+          "source_sha256": "e4389887cfddcfd1a88257131a73c889177ab6b997a494b466c4b4e72dce4414",
+          "exact_source_match": true
+        }
+      ],
+      "rejection_reason": null,
+      "proposal_count": 3,
+      "scope_guard": "explicit_name",
+      "scope_removed_count": 0,
+      "review_performed": true,
+      "validated_selection_count": 3,
+      "display_omitted_count": 1,
+      "model_id": "Phi-4-mini-instruct-generic-cpu:5",
+      "finish_reason": "stop",
+      "elapsed_seconds": 53.902,
+      "validation": "exact_source_span_with_model_relevance_review",
+      "selection_protocol": "propose-scope-review-v2",
+      "human_relevance_review_required": true
+    },
+    "limitations": [
+      "LLM selects excerpts; application renders exact corpus text, not a free-form answer.",
+      "Source fidelity does not establish relevance, truth or an incident verdict.",
+      "Synthetic educational demonstration; no general safety or fully offline guarantee."
+    ]
+  }
+}

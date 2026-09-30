@@ -1,0 +1,91 @@
+{
+  "document_overlap_between_splits": {
+    "dev_test": 0,
+    "train_dev": 0,
+    "train_test": 0
+  },
+  "raw_text_in_output": false,
+  "source_commit": "d510b6949e1938d47c93a43eedd562dc538439dc",
+  "splits": {
+    "dev": {
+      "active_enterprise_19_2_subtechnique_rows": 0,
+      "active_enterprise_19_2_technique_url_rows": 435,
+      "all_linking_rows": 890,
+      "enterprise_parent_families_with_two_or_more_child_ids": 0,
+      "entity_type_counts": {
+        "GROUP": 99,
+        "MALWARE": 214,
+        "TACTIC": 95,
+        "TECHNIQUE": 451,
+        "TOOL": 31
+      },
+      "subtechnique_id_counts": {},
+      "subtechnique_url_rows": 0,
+      "technique_type_non_technique_urls": 6,
+      "technique_type_rows": 451,
+      "technique_url_rows": 445,
+      "unique_documents_all_rows": 16,
+      "unique_documents_technique_rows": 16,
+      "unique_technique_ids": 53
+    },
+    "test": {
+      "active_enterprise_19_2_subtechnique_rows": 0,
+      "active_enterprise_19_2_technique_url_rows": 963,
+      "all_linking_rows": 1918,
+      "enterprise_parent_families_with_two_or_more_child_ids": 0,
+      "entity_type_counts": {
+        "GROUP": 213,
+        "MALWARE": 421,
+        "TACTIC": 255,
+        "TECHNIQUE": 977,
+        "TOOL": 52
+      },
+      "subtechnique_id_counts": {
+        "T1623.001": 1,
+        "T1631.001": 6
+      },
+      "subtechnique_url_rows": 7,
+      "technique_type_non_technique_urls": 0,
+      "technique_type_rows": 977,
+      "technique_url_rows": 977,
+      "unique_documents_all_rows": 34,
+      "unique_documents_technique_rows": 33,
+      "unique_technique_ids": 99
+    },
+    "train": {
+      "active_enterprise_19_2_subtechnique_rows": 9,
+      "active_enterprise_19_2_technique_url_rows": 1891,
+      "all_linking_rows": 4153,
+      "enterprise_parent_families_with_two_or_more_child_ids": 0,
+      "entity_type_counts": {
+        "CON": 26,
+        "GROUP": 404,
+        "MALWARE": 1034,
+        "TACTIC": 608,
+        "TECHNIQUE": 1947,
+        "TOOL": 134
+      },
+      "subtechnique_id_counts": {
+        "T1021.001": 1,
+        "T1027.001": 1,
+        "T1070.004": 1,
+        "T1218.011": 1,
+        "T1546.012": 1,
+        "T1547.006": 1,
+        "T1553.002": 1,
+        "T1555.003": 1,
+        "T1562.001": 1,
+        "T1573.002": 1,
+        "T1623.001": 2,
+        "T1631.001": 4
+      },
+      "subtechnique_url_rows": 16,
+      "technique_type_non_technique_urls": 32,
+      "technique_type_rows": 1947,
+      "technique_url_rows": 1915,
+      "unique_documents_all_rows": 67,
+      "unique_documents_technique_rows": 63,
+      "unique_technique_ids": 125
+    }
+  }
+}

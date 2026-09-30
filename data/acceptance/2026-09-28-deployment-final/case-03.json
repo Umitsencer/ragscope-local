@@ -1,0 +1,110 @@
+{
+  "id": "credential_dumping",
+  "review_focus": "Definition-grounded educational answer; no actionable attack instructions added.",
+  "elapsed_seconds": 50.584,
+  "exit_code": 0,
+  "stderr": "",
+  "unparsed_stdout": "",
+  "process_ok": true,
+  "outcome": "evidence_selected",
+  "semantic_review": "pending",
+  "output": {
+    "run": "ragscope-local-extractive-demo-v1",
+    "query_sha256": "a9e528c3790e8b42e8a4c6cb4d32a834d8c5006b9fae0bf970b269afedc20b45",
+    "corpus_sha256": "9fcfa7e666397a1e8cc7ad54eb985a17472ded86be9bee4a90dab8ba8b9481fd",
+    "runtime": {
+      "model_id": "qwen3-embedding-0.6b-generic-cpu:1",
+      "sdk_version": "2.0.1",
+      "cache_sdk_version": "1.2.4",
+      "runtime_device": "CPU",
+      "local_inference": true
+    },
+    "evidence_cards": [
+      {
+        "rank": 1,
+        "attack_id": "T1003",
+        "name": "OS Credential Dumping",
+        "is_subtechnique": false,
+        "parent_technique_id": null,
+        "cosine_similarity": 0.7344391345977783,
+        "definition": "Adversaries may attempt to dump credentials to obtain account login and credential material, normally in the form of a hash or a clear text password. Credentials can be obtained from OS caches, memory, or structures.(Citation: Brining MimiKatz to Unix) Credentials can then be used to perform [Lateral Movement](https://attack.mitre.org/tactics/TA0008) and access restricted information. Several of the tools mentioned in associated sub-techniques may be used by both adversaries and professional security testers. Additional custom tools likely exist as well."
+      },
+      {
+        "rank": 2,
+        "attack_id": "T1110.004",
+        "name": "Credential Stuffing",
+        "is_subtechnique": true,
+        "parent_technique_id": "T1110",
+        "cosine_similarity": 0.6153527498245239,
+        "definition": "Adversaries may use credentials obtained from breach dumps of unrelated accounts to gain access to target accounts through credential overlap. Occasionally, large numbers of username and password pairs are dumped online when a website or service is compromised and the user account credentials accessed. The information may be useful to an adversary attempting to compromise accounts by taking advantage of the tendency for users to use the same passwords across personal and business accounts. Credential stuffing is a risky option because it could cause numerous authentication failures and account lockouts, depending on the organization's login failure policies. Typically, management services over commonly used ports are used when stuffing credentials. Commonly targeted services include the following: * SSH (22/TCP) * Telnet (23/TCP) * FTP (21/TCP) * NetBIOS / SMB / Samba (139/TCP & 445/TCP) * LDAP (389/TCP) * Kerberos (88/TCP) * RDP / Terminal Services (3389/TCP) * HTTP/HTTP Management Services (80/TCP & 443/TCP) * MSSQL (1433/TCP) * Oracle (1521/TCP) * MySQL (3306/TCP) * VNC (5900/TCP) In addition to management services, adversaries may \"target single sign-on (SSO) and cloud-based applications utilizing federated authentication protocols,\" as well as externally facing email applications, such as Office 365.(Citation: US-CERT TA18-068A 2018)"
+      },
+      {
+        "rank": 3,
+        "attack_id": "T1589.001",
+        "name": "Credentials",
+        "is_subtechnique": true,
+        "parent_technique_id": "T1589",
+        "cosine_similarity": 0.6101223826408386,
+        "definition": "Adversaries may gather credentials that can be used during targeting. Account credentials gathered by adversaries may be those directly associated with the target victim organization or attempt to take advantage of the tendency for users to use the same passwords across personal and business accounts. Adversaries may gather credentials from potential victims in various ways, such as direct elicitation via [Phishing for Information](https://attack.mitre.org/techniques/T1598). Adversaries may also compromise sites then add malicious content designed to collect website authentication cookies from visitors.(Citation: ATT ScanBox) (Citation: Register Deloitte)(Citation: Register Uber)(Citation: Detectify Slack Tokens)(Citation: Forbes GitHub Creds)(Citation: GitHub truffleHog)(Citation: GitHub Gitrob)(Citation: CNET Leaks) Where multi-factor authentication (MFA) based on out-of-band communications is in use, adversaries may compromise a service provider to gain access to MFA codes and one-time passwords (OTP).(Citation: Okta Scatter Swine 2022) Credential information may also be exposed to adversaries via leaks to online or other accessible data sets (ex: [Search Engines](https://attack.mitre.org/techniques/T1593/002), breach dumps, code repositories, etc.). Adversaries may purchase credentials from dark web markets, such as Russian Market and 2easy, or through access to Telegram channels that distribute logs from infostealer malware.(Citation: Bleeping Computer 2easy 2021)(Citation: SecureWorks Infostealers 2023)(Citation: Bleeping Computer Stealer Logs 2023) Gathering this information may reveal opportunities for other forms of reconnaissance (ex: [Search Open Websites/Domains](https://attack.mitre.org/techniques/T1593) or [Phishing for Information](https://attack.mitre.org/techniques/T1598)), establishing operational resources (ex: [Compromise Accounts](https://attack.mitre.org/techniques/T1586)), and/or initial access (ex: [External Remote Services](https://attack.mitre.org/techniques/T1133) or [Valid Accounts](https://attack.mitre.org/techniques/T1078))."
+      }
+    ],
+    "sibling_diagnostic": {
+      "available": true,
+      "top_result_parent_family": "T1003",
+      "family_child_ids": [
+        "T1003.001",
+        "T1003.002",
+        "T1003.003",
+        "T1003.004",
+        "T1003.005",
+        "T1003.006",
+        "T1003.007",
+        "T1003.008"
+      ],
+      "message": "SAGE M3 child/parent/abstain gate is not enabled: its controlled dev calibration did not meet the declared risk bound."
+    },
+    "generation": {
+      "status": "evidence_selected",
+      "quotes": [
+        {
+          "span_id": "E1",
+          "attack_id": "T1003",
+          "name": "OS Credential Dumping",
+          "start": 0,
+          "end": 149,
+          "quote": "Adversaries may attempt to dump credentials to obtain account login and credential material, normally in the form of a hash or a clear text password.",
+          "source_sha256": "b45246d901c4a411c6cb911c53ec53d59590c5ddb7a97d063ee1ea96693719a3",
+          "exact_source_match": true
+        },
+        {
+          "span_id": "E2",
+          "attack_id": "T1003",
+          "name": "OS Credential Dumping",
+          "start": 150,
+          "end": 387,
+          "quote": "Credentials can be obtained from OS caches, memory, or structures.(Citation: Brining MimiKatz to Unix) Credentials can then be used to perform [Lateral Movement](https://attack.mitre.org/tactics/TA0008) and access restricted information.",
+          "source_sha256": "b45246d901c4a411c6cb911c53ec53d59590c5ddb7a97d063ee1ea96693719a3",
+          "exact_source_match": true
+        }
+      ],
+      "rejection_reason": null,
+      "proposal_count": 2,
+      "scope_guard": "explicit_name",
+      "scope_removed_count": 0,
+      "review_performed": true,
+      "validated_selection_count": 2,
+      "display_omitted_count": 0,
+      "model_id": "Phi-4-mini-instruct-generic-cpu:5",
+      "finish_reason": "stop",
+      "elapsed_seconds": 44.231,
+      "validation": "exact_source_span_with_model_relevance_review",
+      "selection_protocol": "propose-scope-review-v2",
+      "human_relevance_review_required": true
+    },
+    "limitations": [
+      "LLM selects excerpts; application renders exact corpus text, not a free-form answer.",
+      "Source fidelity does not establish relevance, truth or an incident verdict.",
+      "Synthetic educational demonstration; no general safety or fully offline guarantee."
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "distinct_source_groups": 1052,
+  "per_split": {
+    "dev": {
+      "multi_target_query_records": 10,
+      "parent_families_with_two_or_more_child_ids": 61,
+      "query_records": 2212,
+      "query_records_touching_sibling_families": 1152,
+      "relationship_rows": 2222,
+      "source_groups": 142,
+      "subtechnique_target_occurrences": 1213,
+      "unique_subtechnique_ids": 222
+    },
+    "test": {
+      "multi_target_query_records": 13,
+      "parent_families_with_two_or_more_child_ids": 66,
+      "query_records": 2626,
+      "query_records_touching_sibling_families": 1368,
+      "relationship_rows": 2641,
+      "source_groups": 157,
+      "subtechnique_target_occurrences": 1454,
+      "unique_subtechnique_ids": 271
+    },
+    "train": {
+      "multi_target_query_records": 54,
+      "parent_families_with_two_or_more_child_ids": 83,
+      "query_records": 12206,
+      "query_records_touching_sibling_families": 6445,
+      "relationship_rows": 12273,
+      "source_groups": 753,
+      "subtechnique_target_occurrences": 6647,
+      "unique_subtechnique_ids": 393
+    }
+  },
+  "query_id_overlap_between_splits": 0,
+  "query_records": 17044,
+  "relationship_rows": 17136,
+  "source_type_counts": {
+    "campaign": 1143,
+    "intrusion-set": 4589,
+    "malware": 10453,
+    "tool": 859
+  }
+}

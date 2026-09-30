@@ -1,0 +1,186 @@
+{
+  "ata": {
+    "conflicting_duplicate_questions": [
+      {
+        "record_ids": [
+          "ata-106",
+          "ata-107"
+        ],
+        "source_ids": [
+          "BLOG-104"
+        ],
+        "target_sets": [
+          [
+            "T1059"
+          ],
+          [
+            "T1105"
+          ]
+        ]
+      },
+      {
+        "record_ids": [
+          "ata-116",
+          "ata-117"
+        ],
+        "source_ids": [
+          "BLOG-125"
+        ],
+        "target_sets": [
+          [
+            "T1136.001"
+          ],
+          [
+            "T1190"
+          ]
+        ]
+      }
+    ],
+    "duplicate_record_ids": [],
+    "exact_duplicate_question_record_groups": [
+      [
+        "ata-106",
+        "ata-107"
+      ],
+      [
+        "ata-116",
+        "ata-117"
+      ]
+    ],
+    "items_with_multiple_labels": 0,
+    "label_state_against_19_2": {
+      "active_in_19_2": 156,
+      "missing_from_enterprise_19_2": 1,
+      "revoked_in_19_2": 3
+    },
+    "labels_total": 160,
+    "labels_unique": 79,
+    "parent_and_child_family_count": 7,
+    "parent_and_child_labeled_families": [
+      "T1027",
+      "T1056",
+      "T1059",
+      "T1136",
+      "T1219",
+      "T1566",
+      "T1585"
+    ],
+    "published_split_field_present": false,
+    "question_contains_gold_id_count": 0,
+    "records": 160,
+    "rows_in_sibling_families": 40,
+    "sibling_families_with_two_or_more_distinct_child_labels": [
+      "T1027",
+      "T1059",
+      "T1071",
+      "T1102",
+      "T1204",
+      "T1542",
+      "T1564",
+      "T1566"
+    ],
+    "sibling_family_count": 8,
+    "sibling_family_support": {
+      "T1027": {
+        "child_labels": [
+          "T1027.006",
+          "T1027.012"
+        ],
+        "parent_labeled": true,
+        "rows": 3,
+        "source_groups": 3
+      },
+      "T1059": {
+        "child_labels": [
+          "T1059.001",
+          "T1059.007"
+        ],
+        "parent_labeled": true,
+        "rows": 3,
+        "source_groups": 3
+      },
+      "T1071": {
+        "child_labels": [
+          "T1071.001",
+          "T1071.003",
+          "T1071.004"
+        ],
+        "parent_labeled": false,
+        "rows": 3,
+        "source_groups": 3
+      },
+      "T1102": {
+        "child_labels": [
+          "T1102.001",
+          "T1102.002"
+        ],
+        "parent_labeled": false,
+        "rows": 3,
+        "source_groups": 2
+      },
+      "T1204": {
+        "child_labels": [
+          "T1204.001",
+          "T1204.002"
+        ],
+        "parent_labeled": false,
+        "rows": 2,
+        "source_groups": 2
+      },
+      "T1542": {
+        "child_labels": [
+          "T1542.001",
+          "T1542.003"
+        ],
+        "parent_labeled": false,
+        "rows": 2,
+        "source_groups": 2
+      },
+      "T1564": {
+        "child_labels": [
+          "T1564.001",
+          "T1564.006"
+        ],
+        "parent_labeled": false,
+        "rows": 2,
+        "source_groups": 2
+      },
+      "T1566": {
+        "child_labels": [
+          "T1566.001",
+          "T1566.002",
+          "T1566.003",
+          "T1566.004"
+        ],
+        "parent_labeled": true,
+        "rows": 22,
+        "source_groups": 19
+      }
+    },
+    "source_group_size_histogram": {
+      "1": 39,
+      "2": 53,
+      "3": 5
+    },
+    "subtechnique_form_labels": 67,
+    "unique_record_ids": 160,
+    "unique_source_ids": 97,
+    "unmatched_labels": {
+      "T1562": "revoked_in_19_2",
+      "T1574.002": "revoked_in_19_2",
+      "T1656": "revoked_in_19_2",
+      "T1658": "missing_from_enterprise_19_2"
+    }
+  },
+  "attack": {
+    "active_child_parent_links": 475,
+    "active_subtechniques": 475,
+    "active_techniques": 222,
+    "stix_objects": 26086
+  },
+  "manifest_ata_count": 160,
+  "manifest_ata_sha256_matches": true,
+  "manifest_task_count_sum": 1859,
+  "manifest_total": 1859,
+  "source_lock_sha256": "72be716cc85a29f9877f7e42d5a07e0e2caaa0118ecb26bf1695f49953ee995b"
+}

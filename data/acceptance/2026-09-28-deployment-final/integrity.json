@@ -1,0 +1,28 @@
+{
+  "acceptance_directory": "2026-09-28-deployment-final",
+  "application_file_sha256": {
+    "scripts/demo_local_extractive.py": "cdf9f164bdbc15ec38cc15ec97ec976d312692648c4f3bfe6c52be357322acd9",
+    "scripts/demo_local_rag.py": "8b0a19d2dbed2570f06d5f868f69d77249702280bd60b45bf296535ae7cafca1",
+    "scripts/demo_local_retrieval.py": "2f7b424495be5b4bd345303c28c91b1493f754497c957c964201869df085ace3",
+    "scripts/run_rag_acceptance.py": "c2ba0513b9ec63c9933a79051f66c9d4e6f8267e10f7f906fd169d1cdccbf974",
+    "src/ragscope/foundry.py": "c674ed055588124fe2187a991366d831582421be06742ca0ab589c940c91bb24",
+    "src/ragscope/security.py": "360eb424fc5eed32d7d44c4791c5c91721afa11f42f5251cb8911e64a398828b"
+  },
+  "cases_checked": 6,
+  "errors": [],
+  "independent_gold": false,
+  "integrity_passed": true,
+  "orchestration_note": null,
+  "orchestration_script_manifest_match": true,
+  "outcomes": {
+    "ambiguous_sibling": "insufficient_evidence",
+    "credential_dumping": "evidence_selected",
+    "instruction_injection": "insufficient_evidence",
+    "out_of_domain": "insufficient_evidence",
+    "phishing": "evidence_selected",
+    "powershell": "evidence_selected"
+  },
+  "quotes_checked": 5,
+  "run": "acceptance-integrity-v1",
+  "semantic_review": "separate_human_or_assistant_review_required"
+}

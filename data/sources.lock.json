@@ -1,0 +1,74 @@
+{
+  "verified_at": "2026-09-19",
+  "sources": [
+    {
+      "name": "CTIConnect ATA",
+      "repository": "https://github.com/peng-gao-lab/CTIConnect",
+      "commit": "554797d69a51147f1f98fad7198cb2d2b183d0e9",
+      "license": "CC-BY-4.0 as declared in LICENSE-DATA; third-party source rights require separate care",
+      "files": [
+        {
+          "path": "data/raw/cticonnect/manifest.json",
+          "source_path": "data/manifest.json",
+          "sha256": "1c9e3577137333201640b8890221cfee11a64e0eedef4d4def9152c32ad19963"
+        },
+        {
+          "path": "data/raw/cticonnect/ata.jsonl",
+          "source_path": "data/entity_attribution/ata.jsonl",
+          "sha256": "73e263e82144d097bd16896dbfe6324e1e275d9831adfae5fa53189ae51872bc"
+        },
+        {
+          "path": "data/raw/cticonnect/LICENSE-DATA",
+          "source_path": "LICENSE-DATA",
+          "sha256": "9dd043307340bd5696f5ec394f98fc72ff7147b7673c0dc1d326e8613e18936d"
+        }
+      ]
+    },
+    {
+      "name": "AnnoCTR MITRE-only linking",
+      "repository": "https://github.com/boschresearch/anno-ctr-lrec-coling-2024",
+      "commit": "d510b6949e1938d47c93a43eedd562dc538439dc",
+      "license": "CC-BY-SA-4.0 for AnnoCTR corpus as declared in README and LICENSE.txt",
+      "files": [
+        {
+          "path": "data/raw/annoctr/train.jsonl",
+          "source_path": "AnnoCTR/linking_mitre_only/train.jsonl",
+          "sha256": "62314fae97cc1011c0054624e15085e136252e90862f2890ea9738af70901d95"
+        },
+        {
+          "path": "data/raw/annoctr/dev.jsonl",
+          "source_path": "AnnoCTR/linking_mitre_only/dev.jsonl",
+          "sha256": "83e8532f936cf80150986cfd92de46069e0359fa36796943ee66714fcb66345f"
+        },
+        {
+          "path": "data/raw/annoctr/test.jsonl",
+          "source_path": "AnnoCTR/linking_mitre_only/test.jsonl",
+          "sha256": "c49b93f49f87754e6470504fed32c76ff6c2d5a3cb11c6496fe93f13836b6b34"
+        },
+        {
+          "path": "data/raw/annoctr/LICENSE.txt",
+          "source_path": "LICENSE.txt",
+          "sha256": "23ee78c8bae49cf08ea2f0c84945c66b987ebe4520881fb51b3dad4fb43d07c2"
+        }
+      ]
+    },
+    {
+      "name": "MITRE Enterprise ATT&CK 19.2",
+      "repository": "https://github.com/mitre-attack/attack-stix-data",
+      "commit": "6cda5ad8462c79e14fbb872f4e09059b18e0cfc4",
+      "license": "MITRE ATT&CK LICENSE.txt; reproduce copyright designation and license with copies",
+      "files": [
+        {
+          "path": "data/raw/mitre/enterprise-attack-19.2.json",
+          "source_path": "enterprise-attack/enterprise-attack-19.2.json",
+          "sha256": "dc1639caa5501d720e280cf1cbd8fbe009884a0c9b3e6e9ed9d0c25166c3d8f4"
+        },
+        {
+          "path": "data/raw/mitre/LICENSE.txt",
+          "source_path": "LICENSE.txt",
+          "sha256": "738144f7fb054722a4ef9d3367c51710341dc12fc574c6ac3a41daaaecd8bf5e"
+        }
+      ]
+    }
+  ]
+}

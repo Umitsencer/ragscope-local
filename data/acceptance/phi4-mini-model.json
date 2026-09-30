@@ -1,0 +1,25 @@
+{
+  "verified_at": "2026-09-20",
+  "model_id": "Phi-4-mini-instruct-generic-cpu:5",
+  "publisher": "Microsoft",
+  "catalog_uri": "azureml://registries/azureml/models/Phi-4-mini-instruct-generic-cpu/versions/5",
+  "runtime": "CPUExecutionProvider",
+  "format": "ONNX",
+  "catalog_file_size_mb": 4915,
+  "context_length": 131072,
+  "catalog_max_output_tokens": 2048,
+  "demo_max_output_tokens": 384,
+  "license": "MIT",
+  "license_reference": "https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/main/LICENSE",
+  "license_reference_is_mutable": true,
+  "weights_redistributed_in_project": false,
+  "download_exit_code": 0,
+  "cached_after_download": true,
+  "local_artifact_sha256": {
+    "model.onnx.data": "73dcd31cdde7b1890dd4472945f8dc703da918b7dce984c8c15a597ef1189687",
+    "model.onnx": "0c66afce72f1ee85fbcbebf80cc90beb36a0a9516414ae4ea568710a57242b73",
+    "tokenizer.json": "f234cd37e117c9c05f8bd0e25da524f174f505d4b22f57c52ca0c0ca48f55519",
+    "genai_config.json": "905bbda089debedfac0a16ec34bfc4a01eb85fe04b2fd6a0b0f6769d538917be"
+  },
+  "limitations": "Catalog metadata and local artifacts are recorded, not an audit of all pretraining data rights or proof of answer quality."
+}

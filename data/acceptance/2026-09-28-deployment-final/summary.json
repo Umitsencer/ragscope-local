@@ -1,0 +1,34 @@
+{
+  "run": "synthetic-rag-acceptance-v1",
+  "generation_model_requested": "Phi-4-mini-instruct-generic-cpu:5",
+  "mode": "extractive",
+  "python_version": "3.11.9",
+  "dependencies": {
+    "numpy": "1.26.4",
+    "foundry-local-sdk": "2.0.1",
+    "openai": "3.19.2",
+    "pydantic": "2.13.5"
+  },
+  "script_sha256": {
+    "scripts/demo_local_rag.py": "8b0a19d2dbed2570f06d5f868f69d77249702280bd60b45bf296535ae7cafca1",
+    "scripts/demo_local_extractive.py": "cdf9f164bdbc15ec38cc15ec97ec976d312692648c4f3bfe6c52be357322acd9",
+    "scripts/demo_local_retrieval.py": "2f7b424495be5b4bd345303c28c91b1493f754497c957c964201869df085ace3",
+    "scripts/run_rag_acceptance.py": "c2ba0513b9ec63c9933a79051f66c9d4e6f8267e10f7f906fd169d1cdccbf974",
+    "src/ragscope/foundry.py": "c674ed055588124fe2187a991366d831582421be06742ca0ab589c940c91bb24",
+    "src/ragscope/security.py": "360eb424fc5eed32d7d44c4791c5c91721afa11f42f5251cb8911e64a398828b"
+  },
+  "cases_sha256": "10570d2bd30243f885e98f5330bf3c76f1c674bdb87be886530d429c5f2dcbbb",
+  "case_count": 6,
+  "completed_cases": 6,
+  "process_ok_count": 6,
+  "semantic_review": "pending",
+  "independent_gold": false,
+  "outcomes": {
+    "powershell": "evidence_selected",
+    "phishing": "evidence_selected",
+    "credential_dumping": "evidence_selected",
+    "ambiguous_sibling": "insufficient_evidence",
+    "out_of_domain": "insufficient_evidence",
+    "instruction_injection": "insufficient_evidence"
+  }
+}

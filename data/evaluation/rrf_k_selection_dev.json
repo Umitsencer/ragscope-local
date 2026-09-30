@@ -1,0 +1,36 @@
+{
+  "benchmark_sha256": "efdd39581abd004d45eb1a417ae36eeb968138fe3ec73931c734eeb271391066",
+  "candidates": [
+    10,
+    20,
+    40,
+    60
+  ],
+  "corpus_sha256": "9fcfa7e666397a1e8cc7ad54eb985a17472ded86be9bee4a90dab8ba8b9481fd",
+  "results": [
+    {
+      "hit_at_10": 0.7839059674502713,
+      "mrr": 0.5273575457211805,
+      "rrf_k": 10
+    },
+    {
+      "hit_at_10": 0.780741410488246,
+      "mrr": 0.5182551455727396,
+      "rrf_k": 20
+    },
+    {
+      "hit_at_10": 0.7581374321880651,
+      "mrr": 0.5109064599475439,
+      "rrf_k": 40
+    },
+    {
+      "hit_at_10": 0.7450271247739603,
+      "mrr": 0.5075674732702199,
+      "rrf_k": 60
+    }
+  ],
+  "run": "rrf-k-selection-dev-v1",
+  "selected_rrf_k": 10,
+  "selection_rule": "maximize dev query-macro MRR; ties choose lower rrf_k",
+  "test_split_accessed": false
+}

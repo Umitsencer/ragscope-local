@@ -1,0 +1,208 @@
+{
+  "both_correct": 600,
+  "both_incorrect": 986,
+  "dense_only_correct": 14,
+  "eligible_queries": 1627,
+  "family_slices": [
+    {
+      "delta": -0.05769230769230771,
+      "dense_top_exact_accuracy": 0.38461538461538464,
+      "parent_technique_id": "T1588",
+      "queries": 52,
+      "sage_exact_accuracy": 0.3269230769230769
+    },
+    {
+      "delta": -0.04545454545454547,
+      "dense_top_exact_accuracy": 0.36363636363636365,
+      "parent_technique_id": "T1583",
+      "queries": 22,
+      "sage_exact_accuracy": 0.3181818181818182
+    },
+    {
+      "delta": -0.045454545454545456,
+      "dense_top_exact_accuracy": 0.11363636363636363,
+      "parent_technique_id": "T1608",
+      "queries": 44,
+      "sage_exact_accuracy": 0.06818181818181818
+    },
+    {
+      "delta": -0.045454545454545414,
+      "dense_top_exact_accuracy": 0.7727272727272727,
+      "parent_technique_id": "T1070",
+      "queries": 44,
+      "sage_exact_accuracy": 0.7272727272727273
+    },
+    {
+      "delta": -0.01834862385321101,
+      "dense_top_exact_accuracy": 0.30275229357798167,
+      "parent_technique_id": "T1027",
+      "queries": 109,
+      "sage_exact_accuracy": 0.28440366972477066
+    },
+    {
+      "delta": 0.0,
+      "dense_top_exact_accuracy": 0.5238095238095238,
+      "parent_technique_id": "T1003",
+      "queries": 21,
+      "sage_exact_accuracy": 0.5238095238095238
+    },
+    {
+      "delta": 0.0,
+      "dense_top_exact_accuracy": 0.37209302325581395,
+      "parent_technique_id": "T1055",
+      "queries": 43,
+      "sage_exact_accuracy": 0.37209302325581395
+    },
+    {
+      "delta": 0.0,
+      "dense_top_exact_accuracy": 0.8064516129032258,
+      "parent_technique_id": "T1056",
+      "queries": 31,
+      "sage_exact_accuracy": 0.8064516129032258
+    },
+    {
+      "delta": 0.0,
+      "dense_top_exact_accuracy": 0.2608695652173913,
+      "parent_technique_id": "T1090",
+      "queries": 23,
+      "sage_exact_accuracy": 0.2608695652173913
+    },
+    {
+      "delta": 0.0,
+      "dense_top_exact_accuracy": 0.009259259259259259,
+      "parent_technique_id": "T1102",
+      "queries": 108,
+      "sage_exact_accuracy": 0.009259259259259259
+    },
+    {
+      "delta": 0.0,
+      "dense_top_exact_accuracy": 0.5,
+      "parent_technique_id": "T1505",
+      "queries": 20,
+      "sage_exact_accuracy": 0.5
+    },
+    {
+      "delta": 0.0,
+      "dense_top_exact_accuracy": 0.6285714285714286,
+      "parent_technique_id": "T1543",
+      "queries": 35,
+      "sage_exact_accuracy": 0.6285714285714286
+    },
+    {
+      "delta": 0.0,
+      "dense_top_exact_accuracy": 0.32142857142857145,
+      "parent_technique_id": "T1564",
+      "queries": 28,
+      "sage_exact_accuracy": 0.32142857142857145
+    },
+    {
+      "delta": 0.0,
+      "dense_top_exact_accuracy": 0.5,
+      "parent_technique_id": "T1573",
+      "queries": 20,
+      "sage_exact_accuracy": 0.5
+    },
+    {
+      "delta": 0.0,
+      "dense_top_exact_accuracy": 0.0,
+      "parent_technique_id": "T1592",
+      "queries": 20,
+      "sage_exact_accuracy": 0.0
+    },
+    {
+      "delta": 0.0,
+      "dense_top_exact_accuracy": 0.0,
+      "parent_technique_id": "T1596",
+      "queries": 25,
+      "sage_exact_accuracy": 0.0
+    },
+    {
+      "delta": 0.011173184357541888,
+      "dense_top_exact_accuracy": 0.6256983240223464,
+      "parent_technique_id": "T1059",
+      "queries": 179,
+      "sage_exact_accuracy": 0.6368715083798883
+    },
+    {
+      "delta": 0.014705882352941235,
+      "dense_top_exact_accuracy": 0.5441176470588235,
+      "parent_technique_id": "T1218",
+      "queries": 68,
+      "sage_exact_accuracy": 0.5588235294117647
+    },
+    {
+      "delta": 0.015873015873015872,
+      "dense_top_exact_accuracy": 0.4444444444444444,
+      "parent_technique_id": "T1566",
+      "queries": 63,
+      "sage_exact_accuracy": 0.4603174603174603
+    },
+    {
+      "delta": 0.021276595744680854,
+      "dense_top_exact_accuracy": 0.1702127659574468,
+      "parent_technique_id": "T1036",
+      "queries": 47,
+      "sage_exact_accuracy": 0.19148936170212766
+    },
+    {
+      "delta": 0.037037037037037035,
+      "dense_top_exact_accuracy": 0.4444444444444444,
+      "parent_technique_id": "T1574",
+      "queries": 27,
+      "sage_exact_accuracy": 0.48148148148148145
+    },
+    {
+      "delta": 0.041666666666666685,
+      "dense_top_exact_accuracy": 0.4583333333333333,
+      "parent_technique_id": "T1560",
+      "queries": 24,
+      "sage_exact_accuracy": 0.5
+    },
+    {
+      "delta": 0.043478260869565216,
+      "dense_top_exact_accuracy": 0.21739130434782608,
+      "parent_technique_id": "T1546",
+      "queries": 23,
+      "sage_exact_accuracy": 0.2608695652173913
+    },
+    {
+      "delta": 0.07142857142857151,
+      "dense_top_exact_accuracy": 0.5714285714285714,
+      "parent_technique_id": "T1555",
+      "queries": 28,
+      "sage_exact_accuracy": 0.6428571428571429
+    },
+    {
+      "delta": 0.07407407407407407,
+      "dense_top_exact_accuracy": 0.4444444444444444,
+      "parent_technique_id": "T1053",
+      "queries": 27,
+      "sage_exact_accuracy": 0.5185185185185185
+    },
+    {
+      "delta": 0.19607843137254904,
+      "dense_top_exact_accuracy": 0.35294117647058826,
+      "parent_technique_id": "T1547",
+      "queries": 51,
+      "sage_exact_accuracy": 0.5490196078431373
+    }
+  ],
+  "limitations": [
+    "Paired bootstrap quantifies uncertainty on this controlled sibling-supported test subset only.",
+    "Family slices below the minimum query count are excluded from the table, not evidence of no effect.",
+    "The analysis does not retune SAGE or establish independent-report generalization."
+  ],
+  "minimum_family_queries": 20,
+  "paired_bootstrap": {
+    "observed_delta": 0.007990165949600492,
+    "percentile_ci_95": [
+      0.0,
+      0.015980331899200985
+    ],
+    "replicates": 10000,
+    "seed": 20260920
+  },
+  "run": "sage-attack-ranking-test-analysis-v0",
+  "sage_only_correct": 27,
+  "source_artifact": "data/evaluation/sage_attack_ranking_controlled_test.json"
+}

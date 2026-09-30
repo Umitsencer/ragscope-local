@@ -43,14 +43,15 @@ Bu sonuç bağımsız gold veya görülmemiş-soru kalite sonucu değildir. Ayr�
 
 - Aktif teslim ağacı tarihsel deneylerden temizlendi; eski artefactlar ignored `archive/` altında yerelde tutuluyor.
 - Paket `src/` layout ile editable kuruluyor.
-- CI Windows/Python 3.11 üzerinde lint, format, compile,  unit/integration contract testleri, proje ve bağımlılık kontrollerini çalıştırıyor.
+- CI Windows/Python 3.11 üzerinde lint, format, compile, unit/integration contract testleri, proje ve bağımlılık kontrollerini çalıştırıyor.
 - Actions tam commit SHA ile sabit; Dependabot yapılandırılmış.
 - Güvenlik politikası, mimari, evaluation ve teslim belgeleri güncel.
-- 2026-09-30 yerel teslim kapısı: Ruff lint/format, compile, 74 test, yerel bağlantı/hash denetimi, `pip check` ve Git diff kontrolleri geçti.
+- 2026-09-30 teslim kapısı: Ruff lint/format, compile, **75 test**, yerel bağlantı/hash denetimi, `pip check` ve Git diff kontrolleri geçti.
+- Remote: `https://github.com/Umitsencer/ragscope-local` — **public**, branch `main`, son commit `369d934`.
+- GitHub Actions "Offline project checks" son koşusu: **success** (run [36722310365](https://github.com/Umitsencer/ragscope-local/actions/runs/36722310365)).
 
 ## Açık riskler ve sonraki eylem
 
 1. Bağımsız gold set, gerçek kullanıcı UAT'si ve red-team yok; production-ready iddiası yapılamaz.
 2. Tamamen ağsız soğuk başlangıç doğrulanmadı; catalog task metadata'sı erişim gerektirebilir.
-3. Repository-level açık kaynak kod lisansı seçilmedi; private push için engel değildir, public yayın öncesi karar gerekir.
-4. Kullanıcı private remote'u oluşturmalı/ayarlamalı, staged listeyi incelemeli, push etmeli ve remote CI'ı doğrulamalı.
+3. **Repository-level lisans seçilmedi.** Repo public konuma getirildi. Lisans eklenmezse varsayılan telif hakları geçerlidir; kod "açık kaynak" sayılmaz. Bu bilinçli bir karar ise belgelenmeli, değilse bir lisans (`MIT`, `Apache-2.0` vb.) eklenmelidir.

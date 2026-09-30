@@ -71,7 +71,7 @@ User Query
     Pass 2 — Phi-4-mini reviews; cannot add new spans
                    │
                    ▼  offset + SHA-256 verification
-    render_selection()  — exact byte match against source
+    render_selection()  — exact character-slice match against source
                    │
                    ▼
     ✅ Verified quote   or   🚫 abstention
